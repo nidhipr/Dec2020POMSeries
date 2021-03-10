@@ -30,6 +30,12 @@
 		</classes>
 	</test>
 	
+	<test name="Registration Page Test">
+		<classes>
+			<class name="com.qa.opencart.tests.RegisterPageTest1" />
+		</classes>
+	</test>
+	
 	
 
 
