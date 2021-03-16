@@ -36,6 +36,8 @@ public class DriverFactory {
 		highlight = prop.getProperty("highlight").trim();
 		optionsManager = new OptionsManager(prop);
 
+		String browser = System.getProperty("browser");
+		if(browser != null) {
 		System.out.println("browser name is : " + browserName);
 
 		if (browserName.equalsIgnoreCase("chrome")) {
@@ -57,6 +59,7 @@ public class DriverFactory {
 
 		else {
 			System.out.println("browser name is not correct...enter the correct browser name " + browserName);
+		}
 		}
 
 		getDriver().manage().window().fullscreen();
